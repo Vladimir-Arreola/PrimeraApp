@@ -14,12 +14,14 @@ class SegundaActivity : AppCompatActivity() {
     lateinit var btnIncrement:Button
     lateinit var btnDecrement:Button
     lateinit var btnCredits:Button
+    lateinit var btnVolver:Button
     lateinit var tvContador:TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val music: MediaPlayer = MediaPlayer.create(this, R.raw.coin)
         val fire: MediaPlayer = MediaPlayer.create(this, R.raw.fire)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_segunda)
 
@@ -27,6 +29,7 @@ class SegundaActivity : AppCompatActivity() {
         btnIncrement = findViewById(R.id.increment_btn)
         btnDecrement = findViewById(R.id.decrement_btn)
         btnCredits = findViewById(R.id.buttonCredit)
+        btnVolver = findViewById(R.id.atras)
         tvContador = findViewById(R.id.number)
         contador
 
@@ -61,10 +64,15 @@ class SegundaActivity : AppCompatActivity() {
 
             }
           }
-            btnCredits.setOnClickListener{
-                val miIntent = Intent(this, TerceraActivity::class.java)
-                startActivity(miIntent)
-            }
+        }
+        btnVolver.setOnClickListener{
+            val miIntent = Intent(this, MainActivity::class.java)
+            startActivity(miIntent)
+        }
+
+        btnCredits.setOnClickListener{
+            val miIntent = Intent(this, TerceraActivity::class.java)
+            startActivity(miIntent)
         }
     }
 }

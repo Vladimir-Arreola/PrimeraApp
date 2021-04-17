@@ -4,9 +4,11 @@
     <string name="boton2">Ir a tercera actividad</string>
     <string name="increment_btn">+</string>
     <string name="decrement_btn">-</string>
+    <string name="atras">Volver</string>
     <string name="credit_btn">Creditos</string>
-    <string name="alumno_n_goku">Alumno: \n Damián Vladimir Arreola Orozco
-                                 Materia: \n Topicos selectos de tecnologías 1
-                                 Profesor: \n Erick Jorge Roberto Guerrero Muñoz
-                                 Fecha: \n 14 de abril del 2021</string>
+    <string name="alumno_n_goku"><b>Alumno:</b> \n Damián Vladimir Arreola Orozco
+                                 <b>Semestre:</b> \n Septimo
+                                 <b>Materia:</b> \n Topicos selectos de tecnologías 1
+                                 <b>Profesor:</b> \n Erick Jorge Roberto Guerrero Muñoz
+                                 <b>Fecha:</b> \n 14 de abril del 2021</string>
 </resources>
